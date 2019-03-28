@@ -2,14 +2,17 @@
 
 ; 단축키 등록
 Try {
-    DefaultCommaPasteKey = CtrlShiftV
+    DefaultCommaPasteKey = Ctrl Shift V
     IniRead, CommaPasteKeyVar, config.ini, Default, CommaPasteKey
 
     if(CommaPasteKeyVar = "ERROR") {
         CommaPasteKeyVar := DefaultCommaPasteKey
         IniWrite, %CommaPasteKeyVar%, config.ini, Default, CommaPasteKey
-    } 
+    }
 
+    MsgBox 단축키 (%CommaPasteKeyVar%)가 등록되었습니다.`n종료 하시려면 우측 하단의 초록색 (H) 트레이 아이콘을 클릭하세요.
+    
+    CommaPasteKeyVar := RegExReplace(CommaPasteKeyVar, "\s", "")
     CommaPasteKeyVar := StrReplace(CommaPasteKeyVar, "Ctrl", "^")
     CommaPasteKeyVar := StrReplace(CommaPasteKeyVar, "Alt", "!")
     CommaPasteKeyVar := StrReplace(CommaPasteKeyVar, "Shift", "+")
