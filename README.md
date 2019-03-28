@@ -5,8 +5,7 @@ AutoHotKey Script 연습용 리포지토리 입니다.
 ## 설치
 GSHelper.exe 파일만 설치하면 끝!
 
-![howtouse](https://user-images.githubusercontent.com/15364994/55131931-f4ab7400-5163-11e9-98a1-eeb60272f6aa.gif)
-
+![howtouse](https://user-images.githubusercontent.com/15364994/55132080-84e9b900-5164-11e9-8770-34598638cc0b.gif)
 
 ### 단축키 변경
 
@@ -18,7 +17,6 @@ GSHelper.exe 파일만 설치하면 끝!
 [Default]
 CommaPasteKey=CtrlF5
 ```
-
 
 ## Built With
 
