@@ -34,7 +34,7 @@ CommaPaste() {
     TempClip = %Clipboard%
     Clipboard := CommaJoin(Clipboard)
     Send ^v
-    Sleep 50 ; 클립보드 꼬임 방지
+    Sleep 100 ; 클립보드 꼬임 방지
     Clipboard = %TempClip%
     return
 }
